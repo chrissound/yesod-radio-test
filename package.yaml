@@ -5,6 +5,10 @@ maintainer: HaskellNixCabalStarter
 license: MIT
 dependencies:
 - base
+- yesod
+- yesod-form
+- text
+- string-conversions
 executables:
   app:
     source-dirs: src
