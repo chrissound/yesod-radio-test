@@ -9,9 +9,15 @@ dependencies:
 - yesod-form
 - text
 - string-conversions
+- hspec
+- hspec-wai
+- yesod-test
 executables:
   app:
     source-dirs: src
     main: Main.hs
+  test:
+    source-dirs: src
+    main: Test.hs
 default-extensions: 
 - LambdaCase

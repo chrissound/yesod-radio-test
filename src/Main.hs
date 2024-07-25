@@ -5,12 +5,15 @@
 {-# LANGUAGE ViewPatterns      #-}
 {-# LANGUAGE MultiParamTypeClasses #-}
 
+module Main  where
+
 import Yesod
 import Yesod.Form
 import Yesod.Form.Fields (radioField)
 import Data.Text (Text)
 import Data.String.Conversions
 import Debug.Trace
+
 
 data App = App
 
