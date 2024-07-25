@@ -7,11 +7,13 @@ dependencies:
 - base
 - yesod
 - yesod-form
+- yesod-core
 - text
 - string-conversions
 - hspec
 - hspec-wai
 - yesod-test
+- shakespeare
 executables:
   app:
     source-dirs: src

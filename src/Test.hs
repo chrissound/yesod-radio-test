@@ -34,6 +34,7 @@ spec = withApp $ do
         setMethod "POST"
         setUrl HomeR
         byLabelExact "Choose a color" "Blue"
+        --byLabelExact "abc" "Blue"
 
       statusIs 200
       htmlAnyContain "div" "You chose: Blue"

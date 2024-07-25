@@ -13,6 +13,7 @@ import Yesod.Form.Fields (radioField)
 import Data.Text (Text)
 import Data.String.Conversions
 import Debug.Trace
+import YesodCustom
 
 
 data App = App
@@ -43,7 +44,7 @@ data ColorForm = ColorForm
 
 colorForm :: AForm Handler ColorForm
 colorForm = ColorForm
-    <$> areq (radioField (pure colorOptions)) "Choose a color" Nothing
+    <$> areq (radioField' (pure colorOptions)) "Choose a color" Nothing
 
 getHomeR :: Handler Html
 getHomeR = do

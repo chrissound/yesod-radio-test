@@ -15,6 +15,7 @@ executable app
   main-is: Main.hs
   other-modules:
       Test
+      YesodCustom
       Paths_HaskellNixCabalStarter
   hs-source-dirs:
       src
@@ -24,9 +25,11 @@ executable app
       base
     , hspec
     , hspec-wai
+    , shakespeare
     , string-conversions
     , text
     , yesod
+    , yesod-core
     , yesod-form
     , yesod-test
   default-language: Haskell2010
@@ -35,6 +38,7 @@ executable test
   main-is: Test.hs
   other-modules:
       Main
+      YesodCustom
       Paths_HaskellNixCabalStarter
   hs-source-dirs:
       src
@@ -44,9 +48,11 @@ executable test
       base
     , hspec
     , hspec-wai
+    , shakespeare
     , string-conversions
     , text
     , yesod
+    , yesod-core
     , yesod-form
     , yesod-test
   default-language: Haskell2010
